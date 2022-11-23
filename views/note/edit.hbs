@@ -1,0 +1,14 @@
+<form action="/note/{{noteData._id}}" method="POST">
+    <input type="hidden" name="_method" value="PUT" />
+    <div>
+        <textarea name="title">{{noteData.title}} </textarea>
+
+    </div>
+    <div>
+        <textarea name="body">{{noteData.body}} </textarea>
+
+    </div>
+    <div>
+        <button type="submit">Submit!</button>
+    </div>
+</form>
